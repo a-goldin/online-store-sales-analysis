@@ -1,5 +1,7 @@
 # SQLite analysis
 
+[English](README.md) · [Русский](README.ru.md)
+
 From the project root, run:
 
 ```powershell

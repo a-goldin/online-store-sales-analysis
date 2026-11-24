@@ -1,5 +1,7 @@
 # Source data
 
+[English](README.md) · [Русский](README.ru.md)
+
 The project uses the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Download the archive from Kaggle and extract the following five CSV files into `data/`. Keep their original names and contents. Git ignores the source CSVs so the repository can be published without bundling the dataset.
 
 | File | One row represents | Key | Rows verified |

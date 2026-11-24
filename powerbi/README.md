@@ -1,5 +1,7 @@
 # Power BI report
 
+[English](README.md) · [Русский](README.ru.md)
+
 Open `sales_dashboard.pbix` in Power BI Desktop. The file includes an imported copy of the data and opens with the full delivered-order period selected.
 
 ## Refresh on another computer

@@ -23,7 +23,7 @@
 
 ## Отчёт Power BI
 
-В [интерактивный отчёт](powerbi/sales_dashboard.pbix) встроены данные о доставленных позициях. На странице **Sales Overview** доступны срезы по периоду и штату, на странице **Product Analysis** - по периоду и категории. См. [меры DAX](powerbi/measures.md) и [инструкцию по обновлению](powerbi/README.md).
+В [интерактивный отчёт](powerbi/sales_dashboard.pbix) встроены данные о доставленных позициях. На странице **Sales Overview** доступны срезы по периоду и штату, на странице **Product Analysis** - по периоду и категории. См. [меры DAX](powerbi/measures.ru.md) и [инструкцию по обновлению](powerbi/README.ru.md).
 
 ### Sales Overview
 
@@ -35,7 +35,7 @@
 
 ## Данные и правила расчёта
 
-Использованы пять файлов из [открытого датасета Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Исходные заказы охватывают период с сентября 2016 по октябрь 2018 года. В отчёте Power BI представлены доставленные заказы с датами оформления с 15 сентября 2016 по 29 августа 2018 года. [Список файлов и ключей](data/README.md).
+Использованы пять файлов из [открытого датасета Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Исходные заказы охватывают период с сентября 2016 по октябрь 2018 года. В отчёте Power BI представлены доставленные заказы с датами оформления с 15 сентября 2016 по 29 августа 2018 года. [Список файлов и ключей](data/README.ru.md).
 
 - Стоимость продаж - сумма цен товарных позиций доставленных заказов без доставки. Средний чек делит эту сумму на число уникальных доставленных заказов с позициями.
 - Объём заказов, статусы и рейтинг штатов по количеству заказов учитывают все статусы, включая заказы без позиций.
@@ -47,7 +47,7 @@
 
 | Инструмент | Результат |
 | --- | --- |
-| SQLite | [10 запросов](sql/sales_queries.sql) и [инструкция по созданию базы](sql/README.md) |
+| SQLite | [10 запросов](sql/sales_queries.sql) и [инструкция по созданию базы](sql/README.ru.md) |
 | Python | [Выполненный ноутбук](notebooks/sales_analysis.ipynb) с проверкой данных, сверкой с SQL и четырьмя графиками |
 | Excel | [Книга с формулами и тремя сводными таблицами](excel/sales_analysis.xlsx) |
 | Power BI | [Две интерактивные страницы](powerbi/sales_dashboard.pbix) |
@@ -56,7 +56,7 @@
 
 ## Как запустить
 
-Скачайте пять CSV из [списка источников](data/README.md) и распакуйте их в `data/`. Из корня проекта выполните:
+Скачайте пять CSV из [списка источников](data/README.ru.md) и распакуйте их в `data/`. Из корня проекта выполните:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -64,4 +64,4 @@ python sql/create_database.py
 python -m jupyterlab
 ```
 
-В JupyterLab откройте `notebooks/sales_analysis.ipynb` и выполните все ячейки. Книгу открывайте в настольном Excel, отчёт - в Power BI Desktop. Для обновления отчёта выполните `python powerbi/prepare_data.py` и укажите путь к полученному CSV в параметре `SalesCsvPath`. [Подробная инструкция](powerbi/README.md).
+В JupyterLab откройте `notebooks/sales_analysis.ipynb` и выполните все ячейки. Книгу открывайте в настольном Excel, отчёт - в Power BI Desktop. Для обновления отчёта выполните `python powerbi/prepare_data.py` и укажите путь к полученному CSV в параметре `SalesCsvPath`. [Подробная инструкция](powerbi/README.ru.md).

@@ -1,5 +1,7 @@
 # Power BI measures
 
+[English](measures.md) · [Русский](measures.ru.md)
+
 Create these measures in the `Sales` table. The CSV contains one row per delivered item and excludes freight from `ItemPrice`. The same measures respond to the date, state and category filters on the report.
 
 ```dax
