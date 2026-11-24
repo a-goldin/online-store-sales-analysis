@@ -1,0 +1,4 @@
+/data/*.csv
+/sql/ecommerce.db
+.ipynb_checkpoints/
+/powerbi/sales.csv
